@@ -3,13 +3,14 @@ import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 // import "./Video.css";
 
-import modelVideo from "./assets/POGuide.mp4";
+import modelVideo from "./assets/POG.mp4";
 import thum from "./assets/POthum.jpg";
 
 const ReactVideoPlayer = () => {
   return (
     <div className="Div">
       <Video
+        playsInline
         autoPlay
         loop
         poster={thum}
