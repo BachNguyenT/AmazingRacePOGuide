@@ -19,7 +19,7 @@ const ReactVideoPlayer = () => {
           console.log("out");
         }}
       >
-        <source src={modelVideo} type="video/webm" />
+        <source src={modelVideo} type="video/webm" playsInline/>
       </Video>
     </div>
   );
