@@ -1,5 +1,6 @@
 import React from "react";
 import video from "./assets/POG.mp4";
+import thumbnail from "./assets/POthum.jpg";
 
 const ReactVideoPlayer = () => {
   return (
@@ -11,7 +12,7 @@ const ReactVideoPlayer = () => {
     // />
     <div
       style={{
-        backgroundColor: "red",
+        backgroundColor: "black",
         width: "100vw",
         height: "100vh",
         display: "flex",
@@ -27,6 +28,7 @@ const ReactVideoPlayer = () => {
         }}
         controls
         playsInline
+        poster={thumbnail}
       >
         <source src={video} type="video/mp4" />
       </video>
